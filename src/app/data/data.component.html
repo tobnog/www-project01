@@ -5,6 +5,7 @@
 </div>
 <div class="row">
   <div class="col">
-    <p>Formularz</p>
+    <p>dane: {{user.p0}} dla użytkownika: {{username}}</p>
+    <input [value]="username" (input)="username = $event.target.value">
   </div>
 </div>
