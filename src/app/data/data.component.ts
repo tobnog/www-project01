@@ -26,7 +26,13 @@ export class DataComponent implements OnInit {
     p9: ''
   };
 
+  ngOnInit(): void {
+    this.getData();
+  }
+
   constructor(private db: DbService) { }
+
+  //private db: DbService
 
   getData(): void {
     this.db.getUser().subscribe(t_user =>{
@@ -34,8 +40,5 @@ export class DataComponent implements OnInit {
     })
   }
 
-  ngOnInit(): void {
-    this.getData();
-  }
 
 }
