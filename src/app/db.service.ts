@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
-import { User } from './data/data.component';
 
 @Injectable({
   providedIn: 'root'
@@ -16,3 +15,18 @@ export class DbService {
     return this.http.get<User>(this.host);
   }
 }
+
+export interface User {
+  id: number,
+  p0: string,
+  p1: string,
+  p2: string,
+  p3: string,
+  p4: string,
+  p5: string,
+  p6: string,
+  p7: string,
+  p8: string,
+  p9: string
+}
+

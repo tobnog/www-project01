@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DbService } from "../db.service";
+import { User } from "../db.service";
 
 @Component({
   selector: 'app-data',
@@ -37,18 +38,4 @@ export class DataComponent implements OnInit {
     this.getData();
   }
 
-}
-
-export interface User {
-  id: number,
-  p0: string,
-  p1: string,
-  p2: string,
-  p3: string,
-  p4: string,
-  p5: string,
-  p6: string,
-  p7: string,
-  p8: string,
-  p9: string
 }
